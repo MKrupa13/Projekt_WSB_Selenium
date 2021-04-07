@@ -119,18 +119,18 @@ class MojTest(unittest.TestCase):
         self.assertTrue(wyskakujace_menu1.is_displayed())
         # element = driver.find_element_by_xpath('//div[@id="menu_navbar"]//li[@class="nav-item"][1]//ul[@class="navbar-subnav"]')
 
-    def test_Menu2(self):
-        driver = self.driver
-        najedz_na_element_2 = driver.find_element_by_xpath('//a[@title="ODZIEŻ TRENINGOWA"]')
-        Hover = ActionChains(driver).move_to_element(najedz_na_element_2)
-        Hover.perform()
-        wyskakujace_menu2 = driver.find_element_by_xpath(
-            '//div[@id="menu_navbar"]//li[@class="nav-item"][2]//ul[@class="navbar-subnav"]')
-        # if wyskakujace_menu.is_displayed():
-        #     print('jest widoczne')
-        # else:
-        #     print('nie')
-        self.assertTrue(wyskakujace_menu2.is_displayed())
+    # def test_Menu2(self):
+    #     driver = self.driver
+    #     najedz_na_element_2 = driver.find_element_by_xpath('//a[@title="ODZIEŻ TRENINGOWA"]')
+    #     Hover = ActionChains(driver).move_to_element(najedz_na_element_2)
+    #     Hover.perform()
+    #     wyskakujace_menu2 = driver.find_element_by_xpath(
+    #         '//div[@id="menu_navbar"]//li[@class="nav-item"][2]//ul[@class="navbar-subnav"]')
+    #     # if wyskakujace_menu.is_displayed():
+    #     #     print('jest widoczne')
+    #     # else:
+    #     #     print('nie')
+    #     self.assertTrue(wyskakujace_menu2.is_displayed())
 
     def test_Login(self):
         driver = self.driver
